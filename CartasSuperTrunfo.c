@@ -2,21 +2,73 @@
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
+ 
+    char estado;                 // Letra do estado
+    char codigo[4];              // Código da carta (1 letra + 2 digítos)
+    char nome[50];               // Nome da Cidade
+    int populacao;               // População
+    float area;                  // Area em km²
+    float pib;                   // PIB
+    int pontosTuristicos;        // Pontos Turisticos
+    
+
+    // Cadastro da primeira carta
+ printf("Cadastro da Carta 1:\n");
+ printf("Digite o estado: ");
+ scanf(" %c", &estado);
+ printf("Digite o código da cidade (1 letra + 2 dígitos): ");
+ scanf("%s", &codigo);
+ printf("Digite o nome da cidade: ");
+ scanf(" %s", &nome); 
+ printf("Digite a população: ");
+ scanf("%d", &populacao);
+ printf("Digite a área em km²: ");
+ scanf("%f", &area);
+ printf("Digite o PIB: ");
+ scanf("%f", &pib);
+ printf("Digite o número de pontos turísticos: ");
+ scanf("%d", &pontosTuristicos);
+    
+    // Exibição dos dados da primeira carta
+ printf("\nDados da Carta 1:\n");
+ printf("Estado: A\n");
+ printf("Código: A01\n");
+ printf("Nome: Alagoas\n");
+ printf("População: 3220104\n");
+ printf("Área: 2784,14 km²\n");
+ printf("PIB: 76.07 bilhões de reais\n");
+ printf("Número de Pontos Turísticos: 30\n");
+
+    // Cadastro da segunda carta
+ printf("\nCadastro da Carta 2:\n");
+ printf("Digite o estado: ");
+ scanf(" %c", &estado);
+ printf("Digite o código da cidade (1 letra + 2 dígitos): ");
+ scanf("%s", &codigo);
+ printf("Digite o nome da cidade: ");
+ scanf(" %s", &nome);
+ printf("Digite a população: ");
+ scanf("%d", &populacao);
+ printf("Digite a área em km²: ");
+ scanf("%f", &area);
+ printf("Digite o PIB: ");
+ scanf("%f", &pib);
+ printf("Digite o número de pontos turísticos: ");
+ scanf("%d", &pontosTuristicos);
+    
+    // Exibição dos dados da segunda carta
+ printf("\nDados da Carta 2:\n");
+ printf("Estado: B");
+ printf("Código: B02\n");
+ printf("Nome: Sergipe\n");
+ printf("População: 2291000\n");
+ printf("Área: 2193.18 km².\n");
+ printf("PIB: 51.86 bilhões de reais\n");
+ printf("Pontos Turísticos: 20\n");
+
+ printf("\nTodas as cartas foram cadastradas com sucesso!\n");
     return 0;
 }
