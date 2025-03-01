@@ -34,14 +34,14 @@ int main() {
     
     // Exibição dos dados da primeira carta
  printf("\nDados da Carta 1:\n");
- printf("Estado: A\n");
- printf("Código: A01\n");
- printf("Nome: Alagoas\n");
- printf("População: 3220104\n");
- printf("Área: 2784,14 km²\n");
- printf("PIB: 76.07 bilhões de reais\n");
- printf("Número de Pontos Turísticos: 30\n");
-
+ printf("Estado: %c\n", estado);
+ printf("Código: %s\n", codigo);
+ printf("Nome: %s\n", nome);
+ printf("População: %d\n", populacao);
+ printf("Área: %f km²\n", area);
+ printf("PIB: %f bilhões de reais\n", pib);
+ printf("Número de Pontos Turísticos: %d\n", pontosTuristicos);
+   
     // Cadastro da segunda carta
  printf("\nCadastro da Carta 2:\n");
  printf("Digite o estado: ");
@@ -61,14 +61,15 @@ int main() {
     
     // Exibição dos dados da segunda carta
  printf("\nDados da Carta 2:\n");
- printf("Estado: B");
- printf("Código: B02\n");
- printf("Nome: Sergipe\n");
- printf("População: 2291000\n");
- printf("Área: 2193.18 km².\n");
- printf("PIB: 51.86 bilhões de reais\n");
- printf("Pontos Turísticos: 20\n");
+ printf("Estado: %c\n", estado);
+ printf("Código: %s\n", codigo);
+ printf("Nome: %s\n", nome);
+ printf("População: %d\n", populacao);
+ printf("Área: %f km²\n", area);
+ printf("PIB: %f bilhões de reais\n", pib);
+ printf("Pontos Turísticos: %d\n", pontosTuristicos);
+   
 
- printf("\nTodas as cartas foram cadastradas com sucesso!\n");
+   printf("\nTodas as cartas foram cadastradas com sucesso!\n");
     return 0;
 }
